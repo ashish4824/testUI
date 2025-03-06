@@ -28,11 +28,11 @@ const Navbar = () => {
         <ul className="flex space-x-4 text-xs">
           <li>
             <Mail size={20} className="inline pr-1" />
-            test@gmail.com
+            info@criticaltouchinfotech.com
           </li>
           <li>
            <Phone size={16} className="inline" />
-           <a href="tel:+911234567890">+91 1234567890</a>
+           <a href="tel:080-45687798"> 080-45687798</a>
           </li>
         </ul>
       </div>

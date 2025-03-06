@@ -71,7 +71,7 @@ const Footer = () => {
             India-560102.
           </p>
           <p className="text-gray-400 mt-2">📞 080-45687798</p>
-          <p className="text-gray-400 mt-2">✉ info@criticaltouchinfo.com</p>
+          <p className="text-gray-400 mt-2">✉ info@criticaltouchinfotech.com</p>
         </div>
       </div>
 
