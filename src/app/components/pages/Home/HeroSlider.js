@@ -4,29 +4,38 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-// Slide data array
+import sidebg1 from "../Home/HeroSlider/slide-bg-01.jpg";
+import sidebg2 from "../Home/HeroSlider/slide-bg-02.jpg";
+import sidebg3 from "../Home/HeroSlider/slide-bg-03.jpg";
+import Image from "next/image";
 const slides = [
   {
     id: 1,
     title: "PRODUCT ENGINEERING",
     subtitle: "We thrive on technology is our strength",
     description: "NEED FOR OUTSOURCED PRODUCT DEVELOPMENT",
-    image: "/your-image1.jpg",
+    image: sidebg1,
   },
   {
     id: 2,
     title: "DIGITAL TRANSFORMATION",
     subtitle: "Innovate with cutting-edge solutions",
     description: "Empowering businesses with AI and Cloud",
-    image: "/your-image2.jpg",
+    image: sidebg2,
+  },
+  {
+    id: 3,
+    title: "PRODUCT ENGINEERING",
+    subtitle: "We thrive on technology is our strength",
+    description: "NEED FOR OUTSOURCED PRODUCT DEVELOPMENT",
+    image: sidebg3,
   },
 ];
 
 const HeroSlider = () => {
   return (
     <div className="relative w-full h-screen bg-gray-900 text-white">
-      {/* Swiper Slider */}
+      {/* <Image src={sidebg1} alt="Slide 1" className="w-full h-full" /> */}
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation={{
@@ -41,7 +50,7 @@ const HeroSlider = () => {
           <SwiperSlide key={slide.id}>
             <div
               className="w-full h-screen flex flex-col items-center justify-center bg-cover bg-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
+              style={{ backgroundImage: `url(${slide.image.src})` }}
             >
               <p className="text-lg">{slide.subtitle}</p>
               <h1 className="text-6xl font-bold">{slide.title}</h1>

@@ -1,25 +1,38 @@
 import Link from "next/link";
-
+import { Facebook, Mail, Phone } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { Twitter } from "lucide-react";
+import { Youtube } from "lucide-react";
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 text-white p-4">
-      <div className="max-w-6xl mx-auto flex justify-between">
-        <h1 className="text-xl font-bold">Critical Touch</h1>
+    <nav className="bg-gray-800 text-white py-2 text-xs">
+      <div className="max-w-6xl mx-auto flex justify-between items-center">
         <ul className="flex space-x-4">
           <li>
-            <Link href="/" className="hover:text-gray-300">
-              Home
-            </Link>
+            <Facebook size={10} />
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-300">
-              About
-            </Link>
+            <Instagram size={10} />
           </li>
           <li>
-            <Link href="/contact" className="hover:text-gray-300">
-              Contact
-            </Link>
+            <Linkedin size={10} />
+          </li>
+          <li>
+            <Twitter size={10} />
+          </li>
+          <li>
+            <Youtube size={10} />
+          </li>
+        </ul>
+        <ul className="flex space-x-4 text-xs">
+          <li>
+            <Mail size={20} className="inline pr-1" />
+            test@gmail.com
+          </li>
+          <li>
+           <Phone size={16} className="inline" />
+           <a href="tel:+911234567890">+91 1234567890</a>
           </li>
         </ul>
       </div>
