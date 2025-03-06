@@ -94,7 +94,7 @@ const ContactForm = () => {
             <h3 className="font-semibold">CORPORATE OFFICE ADDRESS:</h3>
             <p>📍 14/3A 1A4, Brigade Cosmopolis, Balaraj&apos;s Arcade, 4th Floor, Whitefeild Main Road, Whitefield, Bangalore India-560102.</p>
             <p>📞 080-45687798</p>
-            <p>✉️ info@criticaltouchinfo.com</p>
+            <p>✉️ info@criticaltouchinfotech.com</p>
           </div>
           <div>
             <h3 className="font-semibold">SALES OFFICE ADDRESS:</h3>
