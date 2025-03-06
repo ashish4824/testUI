@@ -2,11 +2,11 @@ import site from "./WelcomeSection/site.jpg"
 import Image from "next/image";
 const WelcomeSection = () => {
     return (
-      <section className="flex flex-col md:flex-row items-center justify-between w-full px-8 py-12">
+      <section className="flex flex-col md:flex-row items-center justify-between  px-8 py-12 xl:w-[90%] 2xl:w-[80%] md:w-[90%] lg:w-[90%] w-[95%] mx-auto">
         {/* Left Text Section */}
         <div className="md:w-1/2">
           <h5 className="text-gray-500 uppercase font-bold text-sm tracking-widest">
-            See What We Do
+            See What We Do 
           </h5>
           <h2 className="text-3xl font-bold mt-2">
             Welcome to <span className="text-red-500">Critical Touch</span>

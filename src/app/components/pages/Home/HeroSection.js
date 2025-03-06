@@ -2,6 +2,7 @@ import HeroSlider from "./HeroSlider";
 import Image from "next/image";
 import logo from "../Home/Images/logo.png";
 import isoBadge from "../Home/Images/iso.png";
+import Link from "next/link";
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen bg-cover bg-center" 
@@ -12,9 +13,9 @@ const HeroSection = () => {
         <Image src={logo} alt="Logo" className="h-14 " />
         <ul className="flex space-x-6 text-gray-700 font-medium text-xs">
           <li>HOME</li>
-          <li>COMPANY </li>
-          <li>SERVICES </li>
-          <li>INDUSTRIES</li>
+          <li>COMPANY </li> 
+          <li><Link href="/About">SERVICES</Link></li>
+          <li><Link href="/ContactForm">Contact</Link></li>
           <li>CAPABILITY MATRIX</li>
           <li>ENGAGEMENT OPTIONS</li>
           <li>E-SOLUTIONS</li>
