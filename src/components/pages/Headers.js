@@ -32,7 +32,7 @@ const Headers = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
+    
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden z-40 p-5 flex flex-col space-y-4 text-gray-700 font-medium text-sm">
           <Link href="/" className="uppercase" onClick={() => setMenuOpen(false)}>HOME</Link>
