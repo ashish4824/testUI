@@ -14,13 +14,19 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  maximumScale: 1,
+};
+
 // SEO Metadata Configuration
 export const metadata = {
   title: "Critical Touch Infotech | Web & App Development Experts",
   description:
     "Critical Touch Infotech specializes in innovative web development, mobile apps, and IT consulting. Your trusted partner in digital transformation.",
   keywords:
-    "technology solutions, web development, mobile apps, IT consulting, digital transformation, software development",
+    "technology solutions, web development, mobile apps, IT consulting, digital transformation, software development, React, Next.js, cloud computing, AI solutions, business automation, digital marketing",
   authors: [{ name: "Critical Touch Infotech" }],
   openGraph: {
     title: "Critical Touch Infotech | Web & App Development Experts",
@@ -45,7 +51,6 @@ export const metadata = {
     images: ["https://www.criticaltouchinfotech.com/twitter-image.jpg"],
   },
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1",
   canonical: "https://www.criticaltouchinfotech.com",
 };
 
