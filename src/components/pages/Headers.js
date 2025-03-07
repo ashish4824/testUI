@@ -26,7 +26,7 @@ const Headers = () => {
 
         <Image src={isoBadge} alt="ISO Badge" className="size-10 md:size-12" />
 
-        {/* Mobile Menu Button */}
+        
         <button className="md:hidden text-gray-700" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
