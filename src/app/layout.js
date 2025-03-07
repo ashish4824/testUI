@@ -1,57 +1,62 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
-// Enhanced metadata object for SEO
+// SEO Metadata Configuration
 export const metadata = {
-  title: "Critical Touch Infotech - Your Technology Partner",
-  description: "Critical Touch Infotech provides innovative technology solutions to help businesses thrive in the digital age. Specializing in web development, mobile apps, and IT consulting.",
-  keywords: "technology, web development, mobile apps, IT consulting, software solutions, digital transformation",
-  author: "Critical Touch Infotech",
+  title: "Critical Touch Infotech | Web & App Development Experts",
+  description:
+    "Critical Touch Infotech specializes in innovative web development, mobile apps, and IT consulting. Your trusted partner in digital transformation.",
+  keywords:
+    "technology solutions, web development, mobile apps, IT consulting, digital transformation, software development",
+  authors: [{ name: "Critical Touch Infotech" }],
+  openGraph: {
+    title: "Critical Touch Infotech | Web & App Development Experts",
+    description:
+      "Critical Touch Infotech helps businesses grow with cutting-edge technology solutions, including web and mobile development.",
+    type: "website",
+    url: "https://www.criticaltouchinfotech.com",
+    images: [
+      {
+        url: "https://www.criticaltouchinfotech.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Critical Touch Infotech",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Critical Touch Infotech | Web & App Development Experts",
+    description:
+      "Critical Touch Infotech provides top-notch technology solutions to drive business success.",
+    images: ["https://www.criticaltouchinfotech.com/twitter-image.jpg"],
+  },
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1",
+  canonical: "https://www.criticaltouchinfotech.com",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        {/* Basic SEO Meta Tags */}
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <meta name="author" content={metadata.author} />
-
-        {/* Open Graph Meta Tags for Social Media */}
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.criticaltouchinfotech.com" />
-        <meta property="og:image" content="https://www.criticaltouchinfotech.com/og-image.jpg" />
-
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content="https://www.criticaltouchinfotech.com/twitter-image.jpg" />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://www.criticaltouchinfotech.com" />
-
-        {/* Robots Meta Tag */}
-        <meta name="robots" content="index, follow" />
-
-        {/* Viewport Meta Tag for Mobile Responsiveness */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+      <head>
+        <meta charSet="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Footer />
