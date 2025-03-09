@@ -33,10 +33,10 @@ export const metadata = {
     description:
       "Critical Touch Infotech helps businesses grow with cutting-edge technology solutions, including web and mobile development.",
     type: "website",
-    url: "https://www.criticaltouchinfotech.com",
+    url: "https://criticaltouchinfotech.com",
     images: [
       {
-        url: "https://www.criticaltouchinfotech.com/og-image.jpg",
+        url: "https://criticaltouchinfotech.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Critical Touch Infotech",
@@ -48,10 +48,10 @@ export const metadata = {
     title: "Critical Touch Infotech | Web & App Development Experts",
     description:
       "Critical Touch Infotech provides top-notch technology solutions to drive business success.",
-    images: ["https://www.criticaltouchinfotech.com/twitter-image.jpg"],
+    images: ["https://criticaltouchinfotech.com/twitter-image.jpg"],
   },
   robots: "index, follow",
-  canonical: "https://www.criticaltouchinfotech.com",
+  canonical: "https://criticaltouchinfotech.com/",
 };
 
 export default function RootLayout({ children }) {
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.png" />
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
