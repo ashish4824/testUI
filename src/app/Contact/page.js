@@ -104,7 +104,7 @@ const ContactForm = () => {
             <h3 className="font-semibold">BRANCH OFFICE:</h3>
             <p>📍 Dudley House, 169 Piccadilly, London W1J 9EH, UK</p>
             <p>📞 +44 20 3951 00577</p>
-            <p>✉️ infouk@criticaltouchinfo.com</p>
+            <p>✉️ info@criticaltouchinfotech.com</p>
           </div>
         </div>
       </div>
