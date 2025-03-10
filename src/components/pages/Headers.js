@@ -13,8 +13,9 @@ const Headers = () => {
     <div className="xl:w-[90%] 2xl:w-[80%] md:w-[90%] lg:w-[90%] w-[95%] mx-auto">
       {/* Navbar */}
       <nav className="w-full rounded-md bg-white sticky top-0 z-50 flex items-center justify-between px-6 py-3 shadow-md">
+        <Link href="/">
         <Image src={logo} alt="Logo" className="h-10 md:h-14" />
-
+        </Link>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-gray-700 font-medium text-xs md:text-sm">
           <Link className="cursor-pointer uppercase" href="/">HOME</Link>

@@ -16,8 +16,10 @@ const HeroSection = () => {
     >
       {/* Navbar */}
       <nav className="absolute z-50 top-5 right-0 left-0 w-[90%] md:w-[80%] mx-auto rounded-md bg-white shadow-md flex items-center justify-between px-6 py-3">
-        <Image src={logo} alt="Logo" className="h-10 md:h-14" />
+        <Link href="/">
         
+        <Image src={logo} alt="Logo" className="h-10 md:h-14" />
+        </Link>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-gray-700 font-medium text-xs md:text-sm">
           <Link className="uppercase cursor-pointer" href="/">HOME</Link>
