@@ -76,7 +76,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import favicon from "../../public/favicon.png";
-
+import { Analytics } from "@vercel/analytics/react"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -131,6 +131,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
