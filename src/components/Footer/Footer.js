@@ -78,7 +78,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-8 pt-5 flex justify-between items-center">
         <p className="text-gray-500 text-sm">
-          Copyright © 2025 criticaltouch.com All rights reserved.
+          Copyright © 2025 criticaltouchinfotech.com All rights reserved.
         </p>
 
         {/* Social Icons */}
